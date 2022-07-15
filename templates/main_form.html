@@ -1,0 +1,88 @@
+
+<body style="background-color: lightyellow;">
+<div align="center">
+    <h1>CAR PRICE PREDICTION</h1>
+    <fieldset>
+        <div align="center">
+            <form action="/carprices" method="POST">
+                <table>
+                    <tr>
+                        <td><label>Company [0-21]</label></td>
+                        <td><input type="text" name="make"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Enter fuel type</label></td>
+                        <td><select name="fuel">
+                            <option value="0">Diesel</option>
+                            <option value="1">Gas</option>
+                        </select></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Body Style : (convertible,hardtop,hatchback,sedan,wagon) - [0-4]</label></td>
+                        <td><input type="text" name="body"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label> Drive type : (4wd,fwd,rwd) - [0-2]</label></td>
+                        <td><input type="text" name="wheel"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label> Engine Location : (front,rear) - [0-1]</label></td>
+                        <td><input type="text" name="engine"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label> Engine Type : (dohc,dohcv,l,ohc,ohcf,ohcv,rotor) - [0-6] </label></td>
+                        <td><input type="text" name="engtype"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Symbol [-2 to 3] </label></td>
+                        <td><input type="text" name="symbol"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Normalized loss</label></td>
+                        <td><input type="text" name="normalized"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Width </label></td>
+                        <td><input type="text" name="width"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Height </label></td>
+                        <td><input type="text" name="height"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Engine Size </label></td>
+                        <td><input type="text" name="engsize"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Horsepower </label></td>
+                        <td><input type="text" name="hp"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>City Milage </label></td>
+                        <td><input type="text" name="citympg"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Highway Milage </label></td>
+                        <td><input type="text" name="highwaympg"></td>
+                    </tr>
+                </table>
+                <td></td>
+                <td><input type="submit" value="Predict"></td>
+            </form>
+        </div>
+    </fieldset>
+</div>
+</body>
